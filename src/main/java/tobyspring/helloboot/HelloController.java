@@ -14,8 +14,6 @@ public class HelloController {
     public HelloController(HelloService helloService, ApplicationContext applicationContext) {
         this.helloService = helloService;
         this.applicationContext = applicationContext;
-
-        System.out.println(applicationContext);
     }
 
     @GetMapping("/hello")
